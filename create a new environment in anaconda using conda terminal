@@ -1,6 +1,6 @@
 ### deactivate the default environment provided by conda
 conda deactivate
-### create a conda environment named' envname' and specify the python version as 3.6
+### create a conda environment named' envname' and specify the python version as 3.6 (you can specify it as the version you want)
 conda create -n envname python=3.6 
 ### activate this envionment
 conda activate envname
