@@ -1,0 +1,27 @@
+### deactivate the default environment provided by conda
+conda deactivate
+### create a conda environment named' envname' and specify the python version as 3.6
+conda create -n envname python=3.6 
+### activate this envionment
+conda activate envname
+### install jupyter if you use jupyter notebook
+conda install jupyter
+### create a kernel for this environment
+python -m ipykernel install --user --name envname 
+### if you want to install any other packages in conda, it's better to seach' conda install ...' and use the command
+### provided by conda to install them.
+
+#### other commands
+
+### check the available environments
+conda info -e
+
+### remove a python environment
+conda env remove --name envname
+
+### check the available kernel environment
+jupyter kernelspec list
+
+### to install a sprcified version of tensorflow
+conda install -c conda-force tensorflow=1.14
+
