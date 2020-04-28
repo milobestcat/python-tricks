@@ -1,16 +1,13 @@
 ### open a jupyter notebook script and type in the following command
-
 %% writefile filename.py
-
 print 'hello world'
-
 ### after this, a .py file named filename.py will be automatically created.
 
-### to run the .py file:
 
+### to run the .py file:
 % run filename.py
 
-### to remove the filename.py
 
+### to remove the filename.py
 import os
 os.remove('filename.py')
