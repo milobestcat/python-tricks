@@ -22,6 +22,9 @@ conda env remove --name envname
 ### check the available kernel environment
 jupyter kernelspec list
 
+### to remove a kernel
+jupyter kernelspec uninstall kernelname
+
 ### to install a sprcified version of tensorflow
 conda install -c conda-force tensorflow=1.14
 
