@@ -4,3 +4,37 @@ https://github.com/CoreyMSchafer/code_snippets/blob/master/Python-Unit-Testing/t
 
 https://www.youtube.com/watch?v=6tNS--WetLI
 
+example:
+
+test a file named 'cat.py'.
+
+class Cat():
+    
+    def get_age(self,age):
+        return age
+    def get_boom(self,age):
+        return self.get_age(age)*2
+        
+
+
+##To test this class, create a .py named '.test_cat.py.
+ 
+ 
+from cat import Cat
+import unittest
+
+class TestCat(unittest.TestCase):
+    def test_getage(self):
+        cat_1 = Cat()
+        cat_3 = Cat()
+        self.assertEqual(cat_1.get_age(5),5)
+        self.assertEqual(cat_3.get_age(5),5)
+    def test_getboom(self):
+        cat_2 = Cat()
+        self.assertEqual(cat_2.get_boom(5),10)
+        self.assertTrue((cat_2.get_boom(5)-10)==0)
+        
+Run this 'test_cat.py' in termina:
+python -m unittest test_Cat.py
+
+       
