@@ -8,7 +8,7 @@ conda activate envname
 conda install jupyter
 ### create a kernel for this environment
 python -m ipykernel install --user --name envname 
-### if you want to install any other packages in conda, it's better to seach' conda install ...' and use the command
+### if you want to install any other packages in conda, it's better to search' conda install ...' and use the command
 ### provided by conda to install them.
 
 #### other commands
