@@ -1,0 +1,29 @@
+tuning:
+
+from kerastuner.tuners import RandomSearch
+
+tuner = RandomSearch(
+    build_model,
+    objective='val_accuracy',
+    max_trials=5,
+    executions_per_trial=3,
+    directory='my_dir',
+    project_name='helloworld')
+
+tuner.search(x, y,
+             epochs=5,
+             validation_data=(val_x, val_y))
+             
+ Reload:
+ from kerastuner.tuners import RandomSearch
+
+tuner = RandomSearch(
+    build_model,
+    objective='val_accuracy',
+    max_trials=5,
+    executions_per_trial=3,
+    directory='my_dir',
+    project_name='helloworld')
+
+tuner.reload()
+tuner.get_best_models(num_models=2)
