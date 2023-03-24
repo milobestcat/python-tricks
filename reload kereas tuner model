@@ -27,3 +27,6 @@ tuner = RandomSearch(
 
 tuner.reload()
 tuner.get_best_models(num_models=2)
+
+To call the model:
+tuner[0].build(input_shape=(None, shape_2, shape_3))
