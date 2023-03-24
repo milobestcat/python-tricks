@@ -1,0 +1,2 @@
+go to the directory where notebook is saved
+jupyter nbconvert --clear-output --inplace file_name.ipynb
