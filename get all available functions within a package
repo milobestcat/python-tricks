@@ -1,0 +1,10 @@
+take sklearn as an example: 
+
+import sklearn
+
+# Get the list of all available functions in sklearn
+sklearn_functions = [name for name in dir(sklearn) if callable(getattr(sklearn, name))]
+
+# Print the list of functions
+for function in sklearn_functions:
+    print(function)
