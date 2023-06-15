@@ -4,3 +4,9 @@ https://stats.stackexchange.com/questions/124533/transfer-function-in-forecastin
 ### LSTM to forecast rare event:
 https://machinelearningmastery.com/lstm-model-architecture-for-rare-event-time-series-forecasting/
 
+### Rare events forecast by uber (same as the previous one):
+https://github.com/gimpgael/ExtremeEventForecasting
+
+### modeling extreme events in time series prediction
+### Experienment done by the github didn't show the strength of using this approach for extreme events forecast
+https://github.com/tymefighter/Forecast/issues/55
