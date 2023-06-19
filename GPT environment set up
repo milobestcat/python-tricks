@@ -8,3 +8,5 @@ cd libpostal
 ./configure
 sudo make -j4
 sudo make install
+
+### to check all kernel list: jupyter kernelspec list
