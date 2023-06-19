@@ -1,0 +1,10 @@
+conda init bash
+source ~/.bashrc
+conda activate env_name
+sudo yum install curl autoconf automake libtool pkgconfig
+ git clone https://github.com/openvenues/libpostal libpostal
+cd libpostal
+./bootstrap.sh
+./configure
+sudo make -j4
+sudo make install
