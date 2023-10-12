@@ -1,0 +1,17 @@
+import time
+import timeout_decorator
+
+@timeout_decorator.timeout(5)
+def mytest():
+    print('Do task 1')
+    time.sleep(10)
+    print('Do task 2')
+    
+    return 'Success'
+
+
+try:
+    mytest()
+    
+except:
+    print('Do task 3')
