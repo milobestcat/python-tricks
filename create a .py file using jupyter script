@@ -11,3 +11,13 @@ print 'hello world'
 ### to remove the filename.py
 import os
 os.remove('filename.py')
+
+
+clean up notebook:
+1. go to the directory whre file is saved
+2. jupyter nbconvert --clear-output --inplace file_name.ipynb
+
+delete non-empty folder:
+
+1. import shutil
+2. shutil.rmtree('/folder_name', ignore_errors=True)
