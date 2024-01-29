@@ -1,0 +1,8 @@
+### switch from bash to zsh, mac terminal is by default bash env:
+1. check whether zsh is available: zsh --version
+2. if not, install: sudo apt-get install zsh
+3. change shell to zsh: chsh -s $(which zsh)
+4. restart terminal: chsh -s $(which zsh)
+
+
+
